@@ -12,6 +12,12 @@
 ## Proposed Deep Neural Network   
 ![](https://i.imgur.com/kDrjwRs.png)   
 
+## Dataset
+1. Convert the color space of the image from BGR to RGB
+2. Resize the image to 224 x 224
+3. Subtract the per-channel mean of the imagenet dataset (RGB:[123.68, 116.779, 103.939]) from the resized image   
+4. Dataset: 600 images (PASS), 600 images (FAIL)   
+
 ## Training
 1) Refer to this [link](https://github.com/ramesh-dev-code/misaligned-heat-sink/blob/main/README.md#training-platform-setup) for the training platform setup
 2) Model Training: Execution Time: 2.45 m, Epochs: 57, Trained Model: best_model_14-01-2021_10:56:44.h5
